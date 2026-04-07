@@ -1,0 +1,64 @@
+/* Container principal do jogo */
+.container {
+    display: flex;              /* organiza em flexbox */
+    flex-direction: column;     /* elementos em coluna */
+    height: 100vh;              /* ocupa toda a altura da tela */
+    background-image: url(/src/images/wall.avif); /* fundo com imagem de tijolos */
+}
+
+/* Barra de menu superior (tempo, score, vidas) */
+.menu {
+    display: flex;              
+    justify-content: space-evenly; /* distribui os itens igualmente */
+    align-items: center;          /* centraliza verticalmente */
+    height: 90px;
+    width: 100%;
+    background-color: #000000;    /* fundo preto */
+    color: #ffffff;               /* texto branco */
+    border-bottom: 5px solid #ffd700; /* borda dourada inferior */
+}
+
+/* Texto "Time" em vermelho */
+#Time {
+    color: #ff0000;
+}
+
+/* Texto "Score" em vermelho */
+.score {
+    color: #ff0000;
+}
+
+/* Painel central onde ficam os quadrados */
+.panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Quadrados do painel */
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #ffd700;   /* borda dourada */
+    background-color: #000000;   /* fundo preto */
+}
+
+/* Quadrado com inimigo */
+.enemy {
+    background-image: url(/src/images/enemy.png); /* sprite do inimigo */
+    background-color: #ff0000;   /* fundo vermelho */
+    background-size: cover;      /* imagem cobre todo o quadrado */
+}
+
+/* Área de vidas (coração + contador) */
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste de espaçamento para números secundários */
+.second {
+    margin-top: 10px;
+}

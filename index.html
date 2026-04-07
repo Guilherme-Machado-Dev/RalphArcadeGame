@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona-Ralph</title>
+
+    <!-- Fonte estilo arcade -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+
+        <!-- Menu superior: tempo, score e vidas -->
+        <div class="menu">
+            <!-- Tempo -->
+            <div class="menu-time">
+                <h2 id="Time">Time</h2>
+                <h2 class="second" id="time-left">60</h2>
+            </div>
+
+            <!-- Pontuação -->
+            <div class="menu-score">
+                <h2 class="score">Score</h2>
+                <h2 class="second" id="score">0</h2>
+            </div>
+
+            <!-- Vidas -->
+            <div class="menu-lives">
+                <img src="./src/images/Heart.png" height="30px" alt="coração" />
+                <h2 id="lives">x3</h2>
+            </div>
+        </div>
+
+        <!-- Painel central com os quadrados -->
+        <div class="panel">
+            <!-- Primeira linha -->
+            <div class="panel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <!-- Segunda linha -->
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <!-- Terceira linha -->
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script principal do jogo -->
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
