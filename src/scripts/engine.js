@@ -32,7 +32,7 @@ function countDown() {
 
 // Som ao acertar o inimigo
 function playSound() {
-    let audio = new Audio("./src/audios/audiocoin.m4a");
+    let audio = new Audio("src/audios/audiocoin.m4a"); // caminho ajustado para GitHub Pages
     audio.volume = 0.2;
     audio.play();
 }
