@@ -3,7 +3,7 @@
     display: flex;              /* organiza em flexbox */
     flex-direction: column;     /* elementos em coluna */
     height: 100vh;              /* ocupa toda a altura da tela */
-    background-image: url("/src/images/wall.avif"); /* fundo com imagem de tijolos */
+    background-image: url("../images/wall.avif"); /* fundo com imagem de tijolos */
 }
 
 /* Barra de menu superior (tempo, score, vidas) */
@@ -46,7 +46,7 @@
 
 /* Quadrado com inimigo */
 .enemy {
-    background-image: url("/src/images/enemy.png"); /* sprite do inimigo */
+    background-image: url("../images/enemy.png"); /* sprite do inimigo */
     background-color: #ff0000;   /* fundo vermelho */
     background-size: cover;      /* imagem cobre todo o quadrado */
 }
